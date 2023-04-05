@@ -1,0 +1,109 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fade-in .5s;
+    transition: 1s;
+}
+
+.control-data{
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    
+}
+
+.general-button{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.red{
+    background-color: rgb(210, 0, 0);
+    color: white;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+.container{
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    position: absolute;
+    left: 33vw;
+    padding: 30px;
+    margin: auto;
+    width: 30%;
+    border: 1px solid black;
+    z-index: 1000;
+    background-color: white;
+    transform: translateY(-500px);
+    transition: 1s;
+}
+
+
+.form .data{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.pop-down{
+    /* animation: pop-down 1s forwards; */
+    transform: translateY(0px);
+    
+}
+
+@keyframes pop-down{
+    from{
+        transform: translateY(-500px);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-up{
+    from{
+        transform: translateY(0);
+    }to{
+        transform: translateY(-500px);
+    }
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
